@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TA_PAM_AStore</string>
+    <string name="AStore">AStore</string>
+    <string name="Login">Login</string>
+    <string name="Signup">Sign Up</string>
+    <string name="tdEmail">Masukkan Email</string>
+    <string name="tdPass">Masukkan Password</string>
+    <string name="tdNama">Masukkan Nama</string>
+    <string name="tdTelpon">Masukkan Telepon</string>
+    <string name="btn_tmbh">Tambah Barang</string>
+    <string name="btn_dftr">Daftar Barang</string>
+    <string name="btn_profile">Profil</string>
+    <string name="tdId">Masukkan Id Barang</string>
+    <string name="tdNamabrg">Masukkan Nama Barang</string>
+    <string name="tdJenisbrg">Masukkan Jenis Barang</string>
+    <string name="tdJmlhbrg">Masukkan Jumlah Barang</string>
+    <string name="sambutan">Aplikasi untuk mencatat pemasukkan barang dan pengeluaran barang</string>
+</resources>

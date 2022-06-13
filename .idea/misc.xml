@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable-v24/custom.xml" value="0.1635" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1635" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable/bnt_bg.xml" value="0.1635" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable/btn.xml" value="0.152" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable/btn_bg.xml" value="0.1635" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable/custom.xml" value="0.1635" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1635" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/layout/activity_daftar_barang.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/layout/activity_profil.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/layout/activity_tambah_barang.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/TA_PAM_AStore/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1635" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
