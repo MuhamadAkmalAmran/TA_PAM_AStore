@@ -4,24 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahBarang">
-
-    <TextView
-        android:id="@+id/txtEmail2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/text_me_one"
-        android:text="Nama Barang"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
+    tools:context=".EditBarang">
 
     <EditText
-        android:id="@+id/edNBrg"
+        android:id="@+id/upNama"
         android:layout_width="280dp"
         android:layout_height="49dp"
         android:background="@drawable/custom"
@@ -38,73 +24,24 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.482" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtEmail6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/text_me_one"
-        android:text="Jenis Barang"
+        android:text="Nama Barang"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
-
-    <TextView
-        android:id="@+id/txtPass3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/text_me_one"
-        android:text="Jumlah Barang"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <EditText
-        android:id="@+id/edJumlah"
-        android:layout_width="280dp"
-        android:layout_height="49dp"
-        android:background="@drawable/custom"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:fontFamily="@font/text_me_one"
-        android:hint="@string/tdJmlhbrg"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textColor="#000000"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
-
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="280dp"
-        android:layout_height="49dp"
-        android:background="@drawable/btn"
-        android:fontFamily="@font/text_me_one"
-        android:text="Simpan"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842" />
-
-    <EditText
-        android:id="@+id/edJenis"
+        android:id="@+id/upJenis"
         android:layout_width="280dp"
         android:layout_height="49dp"
         android:background="@drawable/custom"
@@ -121,21 +58,83 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534" />
+        app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/txtSignup2"
+        android:id="@+id/txtPass8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/text_me_one"
-        android:text="BARANG"
+        android:text="Jumlah Barang"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/text_me_one"
+        android:text="Jenis Barang"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <EditText
+        android:id="@+id/upJumlah"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:background="@drawable/custom"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/text_me_one"
+        android:hint="@string/tdJmlhbrg"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <TextView
+        android:id="@+id/txtSignup5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/text_me_one"
+        android:text="EDIT BARANG"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.286"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.225" />
 
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/text_me_one"
+        android:text="UPDATE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885" />
 </androidx.constraintlayout.widget.ConstraintLayout>

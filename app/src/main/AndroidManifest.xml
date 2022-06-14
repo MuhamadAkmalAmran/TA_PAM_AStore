@@ -10,15 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TA_PAM_AStore">
         <activity
+            android:name=".EditBarang"
+            android:exported="false"
+            android:parentActivityName=".DaftarBarang"/>
+        <activity
             android:name=".ProfilActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".DaftarBarang"
             android:exported="false"
             android:parentActivityName=".HomeActivity"/>
         <activity
-            android:name=".DaftarBarang"
-            android:exported="false" />
-        <activity
             android:name=".TambahBarang"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
