@@ -24,7 +24,7 @@
         <activity
             android:name=".TambahBarang"
             android:exported="false"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".DaftarBarang"/>
         <activity
             android:name=".HomeActivity"
             android:exported="false" />

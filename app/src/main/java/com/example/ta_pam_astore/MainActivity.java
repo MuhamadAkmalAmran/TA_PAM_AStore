@@ -46,15 +46,15 @@ public class MainActivity extends AppCompatActivity {
                     etEmail.setError("Email diperlukan");
                     etPass.setError("Password diperlukan");
                 }
-                else if (email.equals("admin") && pass.isEmpty())
+                else if (email.equals("") && pass.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(), "Password Salah", Toast.LENGTH_SHORT).show();
                 }
-                else if (email.isEmpty() && pass.equals("admin"))
+                else if (email.isEmpty() && pass.equals(""))
                 {
                     Toast.makeText(getApplicationContext(), "Email Salah", Toast.LENGTH_SHORT).show();
                 }
-                else if (email.equals("admin") && pass.equals("admin"))
+                else if (email.equals("") && pass.equals(""))
                 {
                     Toast.makeText(getApplicationContext(), "Login Sukses", Toast.LENGTH_SHORT);
 
