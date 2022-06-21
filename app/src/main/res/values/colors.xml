@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colornah">#FFFFEB3B</color>
     <color name="biru">#4fa5d5</color>
+    <color name="Primary">#00b0ff</color>
+    <color name="PrimaryDark">#00b0ff</color>
+    <color name="Accent">#00b0ff</color>
 </resources>

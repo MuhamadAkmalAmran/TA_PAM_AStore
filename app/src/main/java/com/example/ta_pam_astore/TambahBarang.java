@@ -29,6 +29,8 @@ public class TambahBarang extends AppCompatActivity {
         JBrg = findViewById(R.id.edJenis);
         JmlBrg = findViewById(R.id.edJumlah);
 
+        setTitle("Tambah Barang");
+
         btnTmbh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,12 +38,9 @@ public class TambahBarang extends AppCompatActivity {
                 Jenis = JBrg.getText().toString();
                 Jumlah = JmlBrg.getText().toString();
 
-                if (Nama.equals("") || Jenis.equals("") || Jumlah.equals(""))
-                {
-                    Toast.makeText(getApplicationContext(),"Lengkapi Data",Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
+                if (Nama.equals("") || Jenis.equals("") || Jumlah.equals("")) {
+                    Toast.makeText(getApplicationContext(), "Lengkapi Data", Toast.LENGTH_SHORT).show();
+                } else {
                     HashMap<String, String> queryValues = new HashMap<>();
                     queryValues.put("nama_barang", Nama);
                     queryValues.put("jenis_barang", Jenis);
@@ -49,10 +48,7 @@ public class TambahBarang extends AppCompatActivity {
                     dbController.insertData(queryValues);
                     callhome();
                 }
-
-                }
-
-
+            }
         });
     }
 

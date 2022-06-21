@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/arima_madurai_thin</item>
         <item>@font/bebas_neue</item>
+        <item>@font/pt_sans_caption</item>
         <item>@font/text_me_one</item>
     </array>
 </resources>

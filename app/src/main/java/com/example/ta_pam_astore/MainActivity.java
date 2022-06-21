@@ -11,9 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText etEmail, etPass;
-    TextView signup;
-    String email, pass;
+    EditText etUser, etPass;
     Button btnLogin;
 
     @Override
@@ -21,45 +19,36 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etEmail = (EditText) findViewById(R.id.edEmail);
-        etPass = (EditText) findViewById(R.id.edPassword);
+        etUser = (EditText) findViewById(R.id.edUser);
+        etPass = (EditText) findViewById(R.id.edPass);
         btnLogin = (Button) findViewById(R.id.btnLogin);
-        signup = (TextView) findViewById(R.id.txtsignup);
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent i = new Intent(getApplicationContext(), SignupActivity.class);
-                startActivity(i);
-            }
-        });
+        setTitle("Login");
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                email = etEmail.getText().toString();
-                pass = etPass.getText().toString();
+                String user = etUser.getText().toString();
+                String pass = etPass.getText().toString();
 
-                if (email.isEmpty() && pass.isEmpty())
-                {
-                    etEmail.setError("Email diperlukan");
+                if (user.isEmpty() && pass.isEmpty()) {
+                    etUser.setError("Username diperlukan");
                     etPass.setError("Password diperlukan");
-                }
-                else if (email.equals("") && pass.isEmpty())
-                {
-                    Toast.makeText(getApplicationContext(), "Password Salah", Toast.LENGTH_SHORT).show();
-                }
-                else if (email.isEmpty() && pass.equals(""))
-                {
-                    Toast.makeText(getApplicationContext(), "Email Salah", Toast.LENGTH_SHORT).show();
-                }
-                else if (email.equals("") && pass.equals(""))
-                {
-                    Toast.makeText(getApplicationContext(), "Login Sukses", Toast.LENGTH_SHORT);
 
+                }
+                else if(user.equals("admin") && pass.equals("admin"))
+                {
+                    Toast.makeText(MainActivity.this, "Login Sukses", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(i);
+                }
+                else if (user.equals("admin") && pass != ("admin"))
+                {
+                    Toast.makeText(MainActivity.this, "Password Salah", Toast.LENGTH_LONG).show();
+                }
+                else if (user!=("admin") && pass.equals("admin"))
+                {
+                    Toast.makeText(MainActivity.this, "Username Salah", Toast.LENGTH_LONG).show();
                 }
             }
         });

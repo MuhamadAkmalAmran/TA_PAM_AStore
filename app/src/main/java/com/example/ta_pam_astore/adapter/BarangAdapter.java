@@ -52,14 +52,14 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.BarangView
         jmlh = listdata.get(position).getJumlah_barang();
         DBController db = new DBController(control);
 
-        holder.namaTxt.setTextSize(20);
+        holder.namaTxt.setTextSize(30);
         holder.namaTxt.setTextColor(Color.BLUE);
         holder.namaTxt.setText(nm);
-        holder.jenisTxt.setTextColor(Color.BLUE);
+        holder.jenisTxt.setTextColor(Color.BLACK);
         holder.jenisTxt.setText(jenis);
-        holder.jenisTxt.setTextSize(10);
-        holder.jumlahTxt.setTextSize(10);
-        holder.jumlahTxt.setTextColor(Color.BLUE);
+        holder.jenisTxt.setTextSize(15);
+        holder.jumlahTxt.setTextSize(12);
+        holder.jumlahTxt.setTextColor(Color.BLACK);
         holder.jumlahTxt.setText(jmlh);
 
         holder.cardku.setOnLongClickListener(new View.OnLongClickListener() {

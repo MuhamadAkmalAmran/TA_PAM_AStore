@@ -24,7 +24,7 @@ public class EditBarang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_barang);
 
-        Nama = findViewById(R.id.upNama);
+        Nama = findViewById(R.id.upBarang);
         Jenis = findViewById(R.id.upJenis);
         Jumlah = findViewById(R.id.upJumlah);
         Update = findViewById(R.id.btnUp);
@@ -34,7 +34,7 @@ public class EditBarang extends AppCompatActivity {
         jenis = getIntent().getStringExtra("jenis_barang");
         jumlah = getIntent().getStringExtra("jumlah_barang");
 
-        setTitle("Edit_Barang");
+        setTitle("Edit Barang");
         Nama.setText(nama);
         Jenis.setText(jenis);
         Jumlah.setText(jumlah);
@@ -66,7 +66,7 @@ public class EditBarang extends AppCompatActivity {
 
     public void callHome()
     {
-        Toast.makeText(getApplicationContext(),"Data Anda Berhasil DiUpdate",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Data Anda Berhasil di Update",Toast.LENGTH_SHORT).show();
         Intent i = new Intent(getApplicationContext(), DaftarBarang.class);
         startActivity(i);
         finish();

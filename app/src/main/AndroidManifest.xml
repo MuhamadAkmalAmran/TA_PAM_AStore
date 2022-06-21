@@ -14,10 +14,6 @@
             android:exported="false"
             android:parentActivityName=".DaftarBarang"/>
         <activity
-            android:name=".ProfilActivity"
-            android:exported="false"
-            android:parentActivityName=".HomeActivity" />
-        <activity
             android:name=".DaftarBarang"
             android:exported="false"
             android:parentActivityName=".HomeActivity"/>
@@ -28,7 +24,6 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
-        <activity android:name=".SignupActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -29,6 +29,7 @@ public class DaftarBarang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar_barang);
 
+        setTitle("Daftar Barang");
         recyclerView = findViewById(R.id.recyclerView);
         fab = findViewById(R.id.fab_add);
         readData();
@@ -36,6 +37,7 @@ public class DaftarBarang extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(DaftarBarang.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(brgadapter);
+
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,15 +54,14 @@ public class DaftarBarang extends AppCompatActivity {
         barangArrayList = new ArrayList<>();
 
         for (int i=0; i<daftarBarang.size(); i++){
-            Barang barang = new Barang();
+           Barang barang = new Barang();
 
             barang.setId(daftarBarang.get(i).get("id").toString());
-            barang.setNama_barang(daftarBarang.get(i).get("nama_barang").toString());
-            barang.setJenis_barang(daftarBarang.get(i).get("jenis_barang").toString());
-            barang.setJumlah_barang(daftarBarang.get(i).get("jumlah_barang").toString());
+            barang.setNama_barang(daftarBarang.get(i).get("nama_barang"));
+            barang.setJenis_barang(daftarBarang.get(i).get("jenis_barang"));
+            barang.setJumlah_barang(daftarBarang.get(i).get("jumlah_barang"));
 
             barangArrayList.add(barang);
         }
-
     }
 }

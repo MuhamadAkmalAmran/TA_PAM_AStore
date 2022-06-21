@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/mnEdit"
-        android:title="Edit Data" />
+        android:title="Edit Barang" />
     <item
         android:id="@+id/mnHapus"
-        android:title="Hapus Data" />
+        android:title="Hapus Barang" />
 </menu>
